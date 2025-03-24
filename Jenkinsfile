@@ -8,8 +8,8 @@ pipeline {
                     sh '''
                         # Load nvm if not already loaded
                         export NVM_DIR="/home/hunter/.nvm"
-                        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-                        
+                        [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
                         # Ensure the correct Node.js version is used
                         nvm use 23.4.0
                         
